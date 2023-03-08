@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Suite" verbose="4" >
+
+	<test name="Login Page Test">
+	
+	<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/login"></parameter>
+	<parameter name="browser" value="chrome"></parameter>
+			<classes>
+			<class name="testngpractice.openCartLoginPageTest" />
+		</classes>
+
+	</test>
+
+	<test name="Home Page Test">
+	<parameter name="url" value="https://naveenautomationlabs.com/opencart/"></parameter>
+	<parameter name="browser" value="firefox"></parameter>
+
+		<classes>
+			<class name="testngpractice.OpenCartHomePageTest" />
+		</classes>
+
+	</test>
+
+	<test name="forgot Password Test">
+	<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/forgotten"></parameter>
+	<parameter name="browser" value="CHROME"></parameter>
+
+		<classes>
+			<class name="testngpractice.oPenCartforgotPasswordTest" />
+		</classes>
+
+	</test>
+
+
+</suite>
